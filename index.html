@@ -1,38 +1,37 @@
- <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Niranj Maheswar | Security Researcher</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root { --bg: #f9fafb; --card: #ffffff; --text: #111111; --accent: #2563eb; }
     * { margin:0; padding:0; box-sizing:border-box; }
     body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
-    .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
     
     header { text-align: center; margin-bottom: 50px; }
     h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: -1px; }
-    .tagline { color: #666; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-bottom: 20px; }
+    .tagline { color: #666; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-bottom: 25px; }
     
-    /* Social Links Styling */
-    .social-links { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
-    .social-links a { color: var(--text); font-weight: 600; text-decoration: none; padding: 5px 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.85rem; transition: 0.2s; }
-    .social-links a:hover { background: #eee; }
+    /* Social Icons Styling */
+    .social-links { display: flex; justify-content: center; gap: 25px; margin-top: 10px; }
+    .social-links a { color: var(--text); font-size: 1.5rem; transition: transform 0.2s, color 0.2s; }
+    .social-links a:hover { transform: scale(1.2); color: var(--accent); }
 
-    .intro { text-align: center; margin-bottom: 60px; font-size: 1.1rem; color: #444; }
-
-    .projects-grid { display: grid; gap: 20px; }
+    .projects-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
     .project { 
-      background: var(--card); padding: 30px; border-radius: 12px; 
+      background: var(--card); padding: 25px; border-radius: 12px; 
       border: 1px solid #e5e7eb; transition: all 0.3s ease;
     }
     .project:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-    .project h3 { font-family: 'JetBrains Mono', monospace; margin-bottom: 12px; }
-    .project p { margin-bottom: 15px; color: #555; }
-    .project a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .project h3 { font-family: 'JetBrains Mono', monospace; margin-bottom: 8px; font-size: 1.1rem; }
+    .project p { margin-bottom: 12px; color: #555; font-size: 0.9rem; }
+    .project a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.85rem; }
     
-    footer { text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid #e5e7eb; color: #888; }
+    footer { text-align: center; margin-top: 80px; padding-top: 40px; border-top: 1px solid #e5e7eb; color: #888; font-size: 0.9rem; }
   </style>
 </head>
 <body>
@@ -41,34 +40,58 @@
       <h1>Niranj Maheswar</h1>
       <p class="tagline">root@niranj:~# ./researcher.sh --status="active"</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/niranj-maheswar-0949883b3" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com/_niranj_maheswar_" target="_blank">Instagram</a>
-        <a href="https://github.com/Niranj-coder" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/niranj-maheswar-0949883b3" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_niranj_maheswar_" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Niranj-coder" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       </div>
     </header>
-
-    <p class="intro">
-      Hands-on security research and automation tools built for Termux. <br>
-      Focused on mobile-friendly penetration testing and infrastructure optimization.
-    </p>
 
     <div class="projects-grid">
       <div class="project">
         <h3>Termux-fixer</h3>
-        <p>Fixes common Termux errors, handles storage permissions, and resolves repo issues with one command.</p>
+        <p>Resolves common Termux errors, storage permissions, and repo issues automatically.</p>
         <a href="https://github.com/Niranj-coder/Termux-fixer" target="_blank">View Repository →</a>
       </div>
       <div class="project">
         <h3>Kali-Termux-Pro</h3>
-        <p>Automated Kali NetHunter setup inside Termux—no root required.</p>
+        <p>Automated Kali NetHunter deployment for Termux—no root required.</p>
         <a href="https://github.com/Niranj-coder/kali-termux-pro" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>Wraith-Scanner</h3>
+        <p>Lightweight network and port scanner tailored for Android/Termux environments.</p>
+        <a href="https://github.com/Niranj-coder/Wraith-Scanner" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>Kali_Critic</h3>
+        <p>Intelligent tool for parsing and explaining error outputs from Kali Linux tools.</p>
+        <a href="https://github.com/Niranj-coder/Kali_Critic" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>Recon</h3>
+        <p>Mobile-optimized TCP port scanner with basic banner grabbing.</p>
+        <a href="https://github.com/Niranj-coder/Recon" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>EICAR-Vault</h3>
+        <p>Generates EICAR test strings for validating antivirus performance.</p>
+        <a href="https://github.com/Niranj-coder/EICAR-Vault" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>mp4-mp3-downloader</h3>
+        <p>Simple, reliable video/audio downloader script for Termux.</p>
+        <a href="https://github.com/Niranj-coder/mp4-mp3-downloader" target="_blank">View Repository →</a>
+      </div>
+      <div class="project">
+        <h3>football-tournament-manager</h3>
+        <p>Forked and modified tournament manager featuring group stages and knockouts.</p>
+        <a href="https://github.com/Niranj-coder/football-tournament-manager" target="_blank">View Repository →</a>
       </div>
     </div>
 
     <footer>
-      <p>© 2026 Niranj-coder • Stay secure.</p>
+      <p>© 2026 Niranj Maheswar • Building for the mobile terminal.</p>
     </footer>
   </div>
 </body>
 </html>
-     
