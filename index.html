@@ -4,91 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Niranj Maheswar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body{background:linear-gradient(135deg,#00d2ff,#ff6b6b,#feca57,#48dbfb);min-height:100vh;color:#222;position:relative;overflow-x:hidden;}
-    canvas{position:fixed;top:0;left:0;z-index:0;opacity:0.6;}
-    .container{max-width:900px;margin:0 auto;padding:40px 20px;position:relative;z-index:2;text-align:center;}
-    h1{font-size:3.5rem;font-weight:800;color:#fff;text-shadow:0 0 20px rgba(255,255,255,0.8);animation:float 3s infinite;}
-    h1 span{color:#ffeb3b;}
-    .tagline{font-size:1.4rem;margin:20px 0;color:#fff;animation:pulse 2s infinite;}
-    .projects{margin:50px 0;}
-    .card{background:rgba(255,255,255,0.9);margin:20px auto;padding:25px;border-radius:20px;max-width:500px;box-shadow:0 10px 30px rgba(0,0,0,0.2);transform:translateY(20px);opacity:0;animation:slideUp 0.8s forwards;}
-    .card:nth-child(1){animation-delay:0.3s;}
-    .card:nth-child(2){animation-delay:0.6s;}
-    .card:nth-child(3){animation-delay:0.9s;}
-    .card h3{font-size:1.8rem;color:#00b894;margin-bottom:10px;}
-    .card a{color:#e17055;text-decoration:none;font-weight:600;}
-    .card a:hover{color:#00cec9;}
-    footer{margin-top:60px;color:#fff;font-size:1.1rem;}
-    footer a{color:#fff;text-decoration:underline;}
-
-    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
-    @keyframes pulse{0%,100%{opacity:0.8}50%{opacity:1}}
-    @keyframes slideUp{to{transform:translateY(0);opacity:1}}
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      background:#ffffff;
+      color:#111111;
+      font-family:'Inter',system-ui,-apple-system,sans-serif;
+      line-height:1.7;
+      font-size:18px;
+    }
+    .container {
+      max-width:960px;
+      margin:0 auto;
+      padding:80px 20px 120px;
+    }
+    header {
+      text-align:center;
+      margin-bottom:80px;
+    }
+    h1 {
+      font-size:3.8rem;
+      font-weight:700;
+      color:#000000;
+      line-height:1.1;
+      margin-bottom:16px;
+    }
+    .tagline {
+      font-size:1.4rem;
+      color:#444444;
+      max-width:600px;
+      margin:0 auto 40px;
+    }
+    .intro {
+      font-size:1.25rem;
+      color:#222222;
+      max-width:720px;
+      margin:0 auto 80px;
+      text-align:center;
+    }
+    .section {
+      margin-bottom:100px;
+    }
+    .section h2 {
+      font-size:2.4rem;
+      font-weight:700;
+      color:#000000;
+      margin-bottom:32px;
+      border-bottom:2px solid #000000;
+      padding-bottom:16px;
+      display:inline-block;
+    }
+    .project {
+      margin-bottom:60px;
+    }
+    .project h3 {
+      font-size:1.9rem;
+      font-weight:600;
+      color:#000000;
+      margin-bottom:16px;
+    }
+    .project p {
+      font-size:1.15rem;
+      color:#333333;
+      margin-bottom:20px;
+    }
+    .project a {
+      color:#0066cc;
+      text-decoration:none;
+      font-weight:500;
+      font-size:1.1rem;
+    }
+    .project a:hover {
+      text-decoration:underline;
+      color:#004080;
+    }
+    footer {
+      text-align:center;
+      font-size:1rem;
+      color:#666666;
+      padding:60px 0 40px;
+      border-top:1px solid #dddddd;
+    }
+    footer a {
+      color:#0066cc;
+      text-decoration:none;
+    }
+    footer a:hover {
+      text-decoration:underline;
+    }
   </style>
 </head>
 <body>
-  <canvas id="canvas"></canvas>
   <div class="container">
-    <h1>Hey, I'm <span>Niranj</span> Maheswar</h1>
-    <p class="tagline">Termux Wizard • Security Researcher • Kerala</p>
-    <p style="color:#fff;font-size:1.3rem;margin:20px 0;">
-      Building powerful tools on Android since early 2026
+    <header>
+      <h1>Niranj Maheswar</h1>
+      <p class="tagline">Termux • Security Researcher • Kerala</p>
+    </header>
+
+    <p class="intro">
+      Building penetration testing and automation tools directly on Android since early 2026.<br>
+      No root. No laptop. Just Termux.
     </p>
 
-    <div class="projects">
-      <div class="card">
+    <div class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
         <h3>Termux-fixer</h3>
-        <p>Fixes every Termux error in seconds + installs essentials</p>
-        <a href="https://github.com/Niranj-coder/Termux-fixer" target="_blank">View on GitHub</a>
+        <p>One-command solution for common Termux errors — storage, permissions, repositories, and broken installs.</p>
+        <a href="https://github.com/Niranj-coder/Termux-fixer" target="_blank">View on GitHub →</a>
       </div>
-      <div class="card">
+
+      <div class="project">
         <h3>Kali-Termux-Pro</h3>
-        <p>Automated Kali NetHunter setup — no root needed</p>
-        <a href="https://github.com/Niranj-coder/kali-termux-pro" target="_blank">View on GitHub</a>
+        <p>Fully automated Kali NetHunter setup inside Termux — designed for mobile security labs without root.</p>
+        <a href="https://github.com/Niranj-coder/kali-termux-pro" target="_blank">View on GitHub →</a>
       </div>
-      <div class="card">
+
+      <div class="project">
         <h3>Wraith-Scanner</h3>
-        <p>Drama-free network scanner for Android/Termux</p>
-        <a href="https://github.com/Niranj-coder/Wraith-Scanner" target="_blank">View on GitHub</a>
+        <p>Lightweight, error-resistant network scanner built specifically for Android and Termux environments.</p>
+        <a href="https://github.com/Niranj-coder/Wraith-Scanner" target="_blank">View on GitHub →</a>
       </div>
     </div>
 
     <footer>
-      Made with love in Kozhikode • <a href="https://github.com/Niranj-coder">GitHub</a> • Instagram • Email
+      <a href="https://github.com/Niranj-coder">GitHub</a> • Contact
     </footer>
   </div>
-
-  <script>
-    const canvas=document.getElementById('canvas');
-    const ctx=canvas.getContext('2d');
-    canvas.width=innerWidth; canvas.height=innerHeight;
-    const particles=[];
-    for(let i=0;i<80;i++){
-      particles.push({
-        x:Math.random()*canvas.width,
-        y:Math.random()*canvas.height,
-        size:Math.random()*5+1,
-        speedX:Math.random()*3-1.5,
-        speedY:Math.random()*3-1.5,
-        color:`hsl(${Math.random()*360},100%,70%)`
-      });
-    }
-    function animate(){
-      ctx.clearRect(0,0,canvas.width,canvas.height);
-      particles.forEach(p=>{
-        ctx.fillStyle=p.color; ctx.beginPath();
-        ctx.arc(p.x,p.y,p.size,0,Math.PI*2); ctx.fill();
-        p.x+=p.speedX; p.y+=p.speedY;
-        if(p.x<0||p.x>canvas.width) p.speedX*=-1;
-        if(p.y<0||p.y>canvas.height) p.speedY*=-1;
-      });
-      requestAnimationFrame(animate);
-    }
-    animate();
-    window.addEventListener('resize',()=>{canvas.width=innerWidth;canvas.height=innerHeight;});
-  </script>
 </body>
 </html>
