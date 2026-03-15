@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destawell | Kali_Critic - Kali Tool Output Parser & Debugger</title>
+  <link rel="icon" href="../logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root{--bg:#0a0e14;--text:#e2e8f0;--accent:#10b981;--card:#111827;--border:#1f2937}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    .container{max-width:1200px;margin:0 auto;padding:0 5%}
+    header.navbar{position:fixed;top:0;left:0;right:0;background:rgba(10,14,20,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+    .logo img{height:36px;width:auto;transition:transform .3s}
+    .logo img:hover{transform:scale(1.05)}
+    .back-btn{color:var(--accent);text-decoration:none;font-weight:500;display:flex;align-items:center;gap:0.6rem;font-size:1rem}
+    .back-btn:hover{text-decoration:underline}
+    .project-hero{min-height:50vh;padding:10rem 5% 6rem;text-align:center;background:linear-gradient(135deg,#0a0e14 0%,#001a0f 100%)}
+    .project-hero h1{font-size:4.5rem;font-weight:800;margin-bottom:1rem;letter-spacing:-1px}
+    .project-hero p{font-size:1.5rem;max-width:800px;margin:0 auto;opacity:0.9}
+    .section{padding:6rem 0}
+    .content{max-width:900px;margin:0 auto;font-size:1.15rem}
+    .content h2{font-size:2.5rem;margin:2.5rem 0 1.5rem;color:var(--text)}
+    .content ul{list-style:none;padding-left:0}
+    .content li{margin:1.2rem 0;display:flex;align-items:start;gap:1rem;font-size:1.1rem}
+    .content li i{color:var(--accent);font-size:1.4rem;margin-top:0.2rem}
+    .github-btn{display:inline-flex;align-items:center;gap:0.8rem;background:var(--accent);color:#000;padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1.1rem;margin-top:3rem;transition:all .3s}
+    .github-btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(16,185,129,0.25)}
+    footer{background:#000;padding:4rem 5% 2rem;text-align:center;border-top:1px solid var(--border);font-size:0.95rem;opacity:0.8}
+    .social a{color:var(--text);font-size:1.8rem;margin:0 1.2rem;transition:.3s}
+    .social a:hover{color:var(--accent);transform:scale(1.15)}
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="../index.html" class="logo">
+      <img src="../logo.png" alt="Destawell">
+    </a>
+    <a href="../index.html" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <h1>Kali_Critic</h1>
+      <p>Parses & debugs output from Kali tools (nmap, john the ripper) — classifies errors & explains fixes.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content">
+      <h2>Overview</h2>
+      <p>Intelligent output parser and debugger for common Kali Linux tools. Takes raw command output, identifies error patterns, categorizes them, and provides human-readable explanations + exact fix commands.</p>
+      <p>Eliminates hours of Googling cryptic error messages during mobile pentesting sessions.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Supports nmap, john</li>
+        <li><i class="fas fa-check-circle"></i> Classifies errors (syntax, dependency, network, privilege, etc.)</li>
+        <li><i class="fas fa-check-circle"></i> One-click fix suggestions with copyable commands</li>
+        <li><i class="fas fa-check-circle"></i> Works offline — perfect for air-gapped or mobile labs</li>
+      </ul>
+
+      <a href="https://github.com/Niranj-coder/Kali_Critic" target="_blank" class="github-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Destawell | Packets encrypted • Logs erased</p>
+      <div class="social">
+        <a href="https://github.com/Niranj-coder" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/niranj-maheswar-0949883b3" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
